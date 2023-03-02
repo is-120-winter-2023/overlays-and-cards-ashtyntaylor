@@ -41,15 +41,19 @@
     </nav>
   </header>
 
-  <picture>
-    <source media="(min-width: 801px)" srcset="images/hero-kitchen-2000px.jpg">
-    <source media="(min-width: 401px)" srcset="images/hero-kitchen-800px.jpg">
-    <source media="(max-width: 400px)" srcset="images/hero-kitchen-400px.jpg">
-    <img src="images/hero-kitchen-800px.jpg" alt="woman stirring a pot on the stove">
-  </picture>
+  <div class="hero">
+    <picture>
+      <source media="(min-width: 801px)" srcset="images/hero-kitchen-2000px.jpg">
+      <source media="(min-width: 401px)" srcset="images/hero-kitchen-800px.jpg">
+      <source media="(max-width: 400px)" srcset="images/hero-kitchen-400px.jpg">
+      <img src="images/hero-kitchen-800px.jpg" alt="woman stirring a pot on the stove">
+    </picture>
 
-  <h1>Ashtyn's Cookbook</h1>
-  <p>All of my <em>favorite</em> recipes in one place</p>
+    <div class="hero-text">
+      <h1>Ashtyn's Cookbook</h1>
+      <p>All of my <em>favorite</em> recipes in one place</p>
+    </div>
+  </div>
 
   <main>
     <article>
@@ -87,6 +91,31 @@
       <a href="#" class="button">Learn more</a>
     </article>
   </main>
+
+  <section class="cards">
+    <h2 class="sr-only">Cards</h2>
+    <a href="#" class="card">
+      <img src="images/salad-1-500px.jpg" width="500" height="500" loading="lazy" alt="a bowl of salad">
+      <p>Salad</p>
+    </a>
+
+    <a href="#" class="card">
+      <img src="images/bread-500px.jpg" width="500" height="500" loading="lazy" alt="a sliced loaf of wheat bread">
+      <p>Bread</p>
+    </a>
+
+    <a href="#" class="card">
+      <img src="images/chicken-pot-pie-500px.jpg" width="500" height="500" loading="lazy"
+        alt="chicken pot pie with a spoonful already taken out of it">
+      <p>Dinner</p>
+    </a>
+
+    <a href="#" class="card">
+      <img src="images/cookie-500px.jpg" width="500" height="500" loading="lazy"
+        alt="gooey chocolate chip cookies on parchment paper">
+      <p>Dessert</p>
+    </a>
+  </section>
 
   <aside>
     <h2>Anyone Can Cook</h2>

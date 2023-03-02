@@ -178,3 +178,82 @@ aside {
 figcaption {
   margin-bottom: 2rem;
 }
+
+/* Hero Header */
+.hero {
+  position: relative;
+  height: 100vh;
+}
+
+.hero picture {
+  height: 100%;
+}
+
+.hero img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(80%);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient
+    (to bottom, rgb(0 0 0 / 0%) 40%, rgb(0 0 0 / 100%));
+}
+
+.hero-text {
+  position: absolute;
+  color: #fff;
+  inset: auto 1rem 30vh 1rem;
+  text-align: center;
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: clamp(4rem, 10vw + 1rem, 10rem);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 10px #6d7075;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 10px #000;
+}
+
+/* Cards */
+.sr-only {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+.cards {
+  display: flex;
+  gap: 1rem;
+  margin: 0 2rem;
+}
+
+.card {
+  flex: 1 1 0;
+  position: relative;
+  gap: 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid grey;
+  transition: transform 300ms ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
